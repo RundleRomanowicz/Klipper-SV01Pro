@@ -1,0 +1,43 @@
+*#### crowsnest.conf
+#### This is a typical default config.
+#### Also used as default in mainsail / MainsailOS
+#### See:
+#### https://github.com/mainsail-crew/crowsnest/blob/master/README.md
+#### for details to configure to your needs.
+
+
+#####################################################################
+####                                                            #####
+####      Information about ports and according URL's           #####
+####                                                            #####
+#####################################################################
+####                                                            #####
+####    Port 8080 equals /webcam/?action=[stream/snapshot]      #####
+####    Port 8081 equals /webcam2/?action=[stream/snapshot]     #####
+####    Port 8082 equals /webcam3/?action=[stream/snapshot]     #####
+####    Port 8083 equals /webcam4/?action=[stream/snapshot]     #####
+####                                                            #####
+#####################################################################
+
+
+[crowsnest]
+log_path: ~/SV01Pro_data/logs/crowsnest.log
+log_level: verbose                      # Valid Options are quiet/verbose/debug
+delete_log: false                       # Deletes log on every restart, if set to true
+
+# [cam 1 ]
+# mode: mjpg
+# port: 8080
+# # device: /dev/v4l/by-path/platform-feb10000.codec-video-index0
+# device: /dev/v4l/by-path/platform-feb10000.codec-video-index0
+# # device: /dev/video0
+# resolution: 640x480
+# max_fps: 15
+
+
+# [cam 2 ]
+# mode: mjpg
+# port: 8081
+# device: /dev/v4l/by-path/platform-fd500000.pcie-pci-0000:01:00.0-usb-0:1.1:1.0-video-index1
+# resolution: 640x480
+# max_fps: 15
