@@ -1,0 +1,65 @@
+[extruder]
+max_extrude_only_distance: 101.0
+step_pin: PB4
+dir_pin: PB3
+enable_pin: !PC3
+microsteps: 16
+rotation_distance: 3.53601
+nozzle_diameter: 0.400
+filament_diameter: 1.750
+heater_pin: PA1
+sensor_type: EPCOS 100K B57560G104F
+sensor_pin: PC5
+min_temp: 0
+max_temp: 225
+min_extrude_temp: 0
+pressure_advance: 0.274
+
+
+
+
+[bltouch]
+sensor_pin: ^PB1
+control_pin: PB0
+x_offset: 41 #Check This
+y_offset: 6 #Check This
+
+# SV01 Pro Stock Extruder
+[bed_screws]
+# screw1: 30,30
+screw1_name: Front Left Screw
+screw1: 43, 35
+
+screw2_name: Front Right Screw
+screw2: 250, 35
+
+screw3_name: Back Right Screw
+screw3: 250, 210
+
+screw4_name: Back Left Screw
+screw4: 43, 210
+
+screw5_name: Center
+screw5: 146, 120
+
+# # SV01 Pro Stock Extruder
+[screws_tilt_adjust]
+screw1_name: Front Left Screw
+screw1: 3, 25
+
+screw2_name: Front Right Screw
+screw2: 213, 25   # Probe coordinates
+
+screw3_name: Back Right Screw
+screw3: 210, 205
+
+screw4_name: Back Left Screw
+screw4: 3, 205
+
+screw5_name: Center
+screw5: 106, 115
+
+horizontal_move_z: 5.
+speed: 250.
+screw_thread: CCW-M4
+
